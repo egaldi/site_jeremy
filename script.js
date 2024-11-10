@@ -1,6 +1,6 @@
 // Simulazione di credenziali
-const validUsername = "utente";
-const validPassword = "password";
+const validUsername = "jeremy";
+const validPassword = "haskell13";
 
 // Funzione di login
 function login(event) {
