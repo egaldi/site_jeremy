@@ -20,7 +20,7 @@ function login(event) {
 const texts = [
     "Buon Natale",
     "Auguri Amore Mio",
-    "Momenti felici fissuti insieme",
+    "Momenti felici vissuti insieme",
     "Me and You...Always!"
 ];
 let textIndex = 0;
