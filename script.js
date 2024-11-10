@@ -19,7 +19,7 @@ function login(event) {
 // Testo che cambia periodicamente
 const texts = [
     "Buon Natale",
-    "Auguri Amore Mio.",
+    "Auguri Amore Mio",
     "Momenti felici fissuti insieme",
     "Me and You...Always!"
 ];
@@ -47,7 +47,8 @@ function togglePassword() {
 
 function positionRandomText() {
     const randomText = document.getElementById("randomText");
-
+    randomText.textContent = texts[textIndex];
+    textIndex = (textIndex + 1) % texts.length;
     // Ottieni le dimensioni dello schermo
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;

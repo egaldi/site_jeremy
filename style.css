@@ -7,16 +7,16 @@ body {
     margin: 0;
     background-color: #f3f4f6; */
     margin: 0;
-            padding: 0;
-            background-image: url('Untitled.png'); /* Sostituisci con il tuo URL */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    padding: 0;
+    background-image: url('Untitled.png'); /* Sostituisci con il tuo URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .login-container, .static-container {

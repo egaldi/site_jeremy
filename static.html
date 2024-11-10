@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Statica</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Natale 2024</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <style>
+        /* Imposta l'immagine di sfondo */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Untitled.png'); /* Sostituisci con il tuo URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Stile per il testo casuale */
+        .random-text {
+            position: absolute;
+            font-family: 'Mountains of Christmas', cursive;
+            color: #FFD700; /* Giallo oro natalizio */
+            font-size: 2rem;
+            text-shadow: 2px 2px 4px #000000;
+        }
+    </style>
 </head>
 <body>
     <!-- <div class="static-container">
@@ -13,7 +41,7 @@
     </div> -->
 
     <div class="random-text" id="randomText">Buon Natale!</div>
-    
+
 
     <script src="script.js"></script>
 </body>
