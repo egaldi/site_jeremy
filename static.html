@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
     <style>
         /* Imposta l'immagine di sfondo */
-        body {
+        body,html {
             margin: 0;
             padding: 0;
             background-image: url('Untitled.png'); /* Sostituisci con il tuo URL */
@@ -18,11 +18,12 @@
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            height: 85vh;
-            overflow: hidden;
+            height: 100vh;
+            overflow: scroll;
             display: flex;
             align-items: center;
             justify-content: center;
+            white-space: nowrap;
         }
 
         /* Stile per il testo casuale */
@@ -30,7 +31,7 @@
             position: absolute;
             font-family: 'Mountains of Christmas', cursive;
             color: #FFD700; /* Giallo oro natalizio */
-            font-size: 10rem;
+            font-size: 5rem;
             text-shadow: 2px 2px 4px #000000;
         }
     </style>
