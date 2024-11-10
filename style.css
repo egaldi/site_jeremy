@@ -1,11 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f3f4f6;
+    background-color: #f3f4f6; */
+    margin: 0;
+            padding: 0;
+            background-image: url('Untitled.png'); /* Sostituisci con il tuo URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 }
 
 .login-container, .static-container {
@@ -14,6 +25,13 @@ body {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.random-text {
+    position: absolute;
+    font-family: 'Mountains of Christmas', cursive;
+    color: #FFD700; /* Giallo oro natalizio */
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 input {

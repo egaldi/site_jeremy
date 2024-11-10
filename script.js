@@ -18,15 +18,15 @@ function login(event) {
 
 // Testo che cambia periodicamente
 const texts = [
-    "Benvenuto nella nostra pagina!",
-    "Siamo felici di averti qui.",
-    "Goditi la tua visita!",
-    "Esplora e scopri nuove cose."
+    "Buon Natale",
+    "Auguri Amore Mio.",
+    "Momenti felici fissuti insieme",
+    "Me and You...Always!"
 ];
 let textIndex = 0;
 
 function changeText() {
-    const dynamicText = document.getElementById("dynamicText");
+    const dynamicText = document.getElementById("randomText");
     dynamicText.textContent = texts[textIndex];
     textIndex = (textIndex + 1) % texts.length;
 }
@@ -44,3 +44,25 @@ function togglePassword() {
         passwordField.type = "password";
     }
 }
+
+function positionRandomText() {
+    const randomText = document.getElementById("randomText");
+
+    // Ottieni le dimensioni dello schermo
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+
+    // Calcola una posizione casuale per il testo
+    const randomX = Math.floor(Math.random() * (screenWidth - randomText.offsetWidth));
+    const randomY = Math.floor(Math.random() * (screenHeight - randomText.offsetHeight));
+
+    // Imposta la posizione del testo
+    randomText.style.left = `${randomX}px`;
+    randomText.style.top = `${randomY}px`;
+}
+
+// Cambia posizione del testo ogni 2 secondi
+setInterval(positionRandomText, 2000);
+
+// Posiziona il testo la prima volta al caricamento della pagina
+window.onload = positionRandomText;
