@@ -38,7 +38,11 @@ button {
     border: none;
     cursor: pointer;
 }
-
+label {
+    color: teal; 
+    font-family: 'Gill Sans';
+    font-weight:100;
+}
 button:hover {
     background-color: #45a049;
 }
