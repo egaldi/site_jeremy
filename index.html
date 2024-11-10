@@ -12,6 +12,9 @@
         <form id="loginForm" onsubmit="return login(event)">
             <input type="text" id="username" placeholder="Username" required>
             <input type="password" id="password" placeholder="Password" required>
+            <label>
+                <input type="checkbox" onclick="togglePassword()"> Mostra Password
+            </label>
             <button type="submit">Accedi</button>
         </form>
         <p id="error-message" class="error-message"></p>
