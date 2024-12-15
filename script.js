@@ -9,7 +9,7 @@ function login(event) {
     const password = document.getElementById("password").value;
     const errorMessage = document.getElementById("error-message");
 
-    if (username === validUsername && password === validPassword) {
+    if (username === validUsername.toLowerCase() && password === validPassword) {
         window.location.href = "static.html";
     } else {
         errorMessage.textContent = "Credenziali non valide. Riprova.";
